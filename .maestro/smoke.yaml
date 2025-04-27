@@ -1,0 +1,7 @@
+appId: com.danmaestro.maestroineas
+---
+- launchApp
+- assertVisible:
+    text: "Tab One"
+- assertVisible:
+    text: "Tab Two"
