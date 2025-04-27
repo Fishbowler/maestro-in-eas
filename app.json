@@ -32,6 +32,15 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "9bc7f781-e03f-4a88-b502-a8965ff33a1e"
+      }
+    },
+    "owner": "dan-maestro"
   }
 }
