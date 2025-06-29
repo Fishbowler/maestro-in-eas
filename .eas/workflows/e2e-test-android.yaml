@@ -8,11 +8,12 @@ jobs:
     type: build
     params:
       platform: android
-      profile: e2e-test # your eas build profile for E2E test
+      profile: e2e-test
 
   maestro_test:
     needs: [build_android_for_e2e]
-    type: maestro
+    type: maestro-cloud
     params:
       build_id: ${{ needs.build_android_for_e2e.outputs.build_id }}
-      flow_path: ['.maestro/smoke.yml']
+      flows: '.maestro/smoke.yaml'
+      maestro_project_id: proj_01jy292wt8et3ayd00prxbjkwh
